@@ -16,17 +16,17 @@ spec:
     spec:
       containers:
       - name: react-frontend
-        image: lyzhang1999/frontend:latest
-        imagePullPolicy: Always
+        image: frontend:latest
+        imagePullPolicy: IfNotPresent
         ports:
         - containerPort: 3000
         resources:
           requests:
-            memory: "128Mi"
-            cpu: "128m"
+            memory: "500Mi"
+            cpu: "200m"
           limits:
-            memory: "256Mi"
-            cpu: "256m"
+            memory: "1024Mi"
+            cpu: "500m"
 ---
 apiVersion: v1
 kind: Service
