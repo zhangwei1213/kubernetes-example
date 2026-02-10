@@ -16,7 +16,7 @@ spec:
       containers:
       - name: sample-spring
         image: lyzhang1999/sample-kotlin-spring:latest
-        imagePullPolicy: Always
+        imagePullPolicy: IfNotPresent
         ports:
         - containerPort: 8080
           name: http
